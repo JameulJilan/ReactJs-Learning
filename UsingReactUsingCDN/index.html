@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>React Using CDN</title>
+</head>
+
+<body>
+
+    <section id="header-part"></section>
+
+
+    <script type="text/babel">
+        function Alert() {
+            alert("I Am Clicked");
+        }
+        function Button() {
+            return <button onClick={Alert}>Click Me</button>
+        }
+        function FirstComponent() {
+            return <div> Hello World <Button /></div>;
+        }
+        ReactDOM.render(<FirstComponent />, document.getElementById('header-part'));
+    </script>
+</body>
+
+</html>
