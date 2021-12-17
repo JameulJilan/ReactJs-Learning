@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// import {User} from './Hello_World_Class_Component/User';
+// import User from './Hello_World_Class_Component/User';
+// import State from './React_State_Example/State';
+import State from './ReactStateUsingClassComponent/State';
+import  './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <State />      
     </div>
   );
 }
